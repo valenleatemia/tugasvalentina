@@ -1,0 +1,134 @@
+<?php
+require'koneksi.php'
+
+$mahasiswa = query("ELECT*FROM mahasiswa");
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content=IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Daftar Data pesanan catering</title>
+  </head>
+
+  <body>
+    <h1>Daftar Data pesanan catering</h1>
+ <h2>Paket 1</h2>
+    <table border="1" cellpadding="5" cellspading="0">
+        <tr>
+            <th>no</th>
+            <th>Gambar</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>Ket</th>
+            <th>Harga</th>
+            <th>Aksi</th>
+</tr>
+ <?php $i =0;?>
+ <?php foreach($Daftar cetering ):?>
+<tr>
+    <td><?=$i;?></td>
+    <td><img src="paket-nasi-kotak-surabaya-min.jpg"width="200px"></td>
+    <td>Nasi kunig</td>
+    <td>Ayam goreng</td>
+    <td>Tempe rica-rica</td>
+    <td>Sayur kacang pnjng</td>
+    <td>kerupuk</td>
+    <td>perporsi 20.000
+      x100porsi</td>
+      <td>2.000.000</td>
+    <td>
+  <a href="">Ubah</a>
+  <a href="">Hapus</a>
+ </td>
+ </tr>
+ <?php $i ++;?>
+ <?php endforeach;?>
+ </table>
+ </body>
+ 
+ </html>
+
+ <body>
+ <h1>Paket 2</h1>
+    <table border="1" cellpadding="5" cellspading="0">
+        <tr>
+            <th>no</th>
+            <th>Gambar</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>Ket</th>
+            <th>Harga</th>
+            <th>Aksi</th>
+</tr>
+ <?php $i =0;?>
+ <?php foreach($Daftar cetering ):?>
+<tr>
+    <td><?=$i;?></td>
+    <td><img src="ketring4.jpg"width="200px"></td>
+    <td>Nasi putih</td>
+    <td>Sate ayam</td>
+    <td>Ayam kecap</td>
+    <td>Udang saos </td>
+    <td>Cumi goreng </td>
+    <td>Saos tomat  </td>
+    <td>perporsi 35.000
+      x200porsi</td>
+    <td>7.000.000</td>
+    <td>
+  <a href="">Ubah</a>
+  <a href="">Hapus</a>
+ </td>
+ </tr>
+ <?php $i ++;?>
+ <?php endforeach;?>
+ </table>
+ </body>
+
+ <body>
+ <h1>Paket 3</h1>
+    <table border="1" cellpadding="5" cellspading="0">
+        <tr>
+            <th>no</th>
+            <th>Gambar</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>menu</th>
+            <th>Ket</th>
+            <th>Harga</th>
+            <th>Aksi</th>
+</tr>
+ <?php $i =1;?>
+ <?php foreach($Daftar cetering as $mhs ):?>
+<tr>
+    <td><?=$i;?></td>
+    <td><img src="ketring3.jpg"width="200px"></td>
+    <td>Nasi Putih</td>
+    <td>Ayam rica-rica</td>
+    <td>Sayur capcai</td>
+    <td>Salad sayur</td>
+    <td>Cumi saos</td>
+    <td>Buah pisang</td>
+    <td>perporsi 40.000x250porsi</td>
+    <td>10.000.000</td>
+    <td>
+  <a href="">Ubah</a>
+  <a href="">Hapus</a>
+ </td>
+ </tr>
+ <?php $i ++;?>
+ <?php endforeach;?>
+ </table>
+ </body>
